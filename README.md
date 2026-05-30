@@ -29,3 +29,49 @@ whatsapp-food-agent/
 ├── requirements.txt
 └── .env
 ```
+
+Phase 2 — Build the Conversation Agent
+
+Now add OpenAI.
+
+Structure:
+```
+app/
+
+├── agent/
+│   ├── food_agent.py
+│   ├── prompts.py
+│
+├── services/
+│   └── openai_service.py
+```
+
+Goal
+
+Run:
+
+python main.py
+
+and chat in the terminal.
+
+Example:
+
+User:
+I want Chinese food.
+
+Bot:
+What's your budget?
+
+User:
+Under 300
+
+Bot:
+Do you prefer dine-in or takeaway?
+
+User:
+Takeaway
+
+Bot:
+Here are my recommendations...
+
+Still no WhatsApp.

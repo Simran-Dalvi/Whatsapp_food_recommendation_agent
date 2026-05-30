@@ -2,7 +2,7 @@ from pathlib import Path
 
 folders = [
     "app",
-    "app/data"
+    "data"
 ]
 
 for folder in folders:
@@ -17,8 +17,8 @@ for folder in folders:
 files = [
     "app/main.py",
     "app/recommendation.py",
-    "app/data/menu.csv",
-    "app/data/metadata.md",
+    "data/menu.csv",
+    "data/metadata.md",
     "requirements.txt",
     ".env"
 ]

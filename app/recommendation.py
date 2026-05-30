@@ -2,7 +2,7 @@ import pandas as pd
 from typing import Dict
 from pathlib import Path
 
-MENU = Path("./data/menu.csv")
+MENU = Path("../data/menu.csv")
 
 # def recommend_food(prefrenceces: Dict):
 def recommend_food(preference: Dict) -> pd.DataFrame:
@@ -34,16 +34,19 @@ def recommend_food(preference: Dict) -> pd.DataFrame:
             == preference["style"].lower()
         ]
 
-    return df["dish"].tolist()
+    # return df["dish"].tolist()
+    return df.to_dict(orient = "records")
 
-preferences = {
+
+
+def main()-> None:
+    preferences = {
     'type' : 'veg',
     'category' : 'Indian',
     'budget' : 400,
     # 'style' : 'umami'
-}
+    }
 
-def main()-> None:
     menu_df = recommend_food(preferences)
     print(menu_df)
 
