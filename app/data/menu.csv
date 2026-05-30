@@ -1,0 +1,37 @@
+dish,category,price,type,style
+Paneer Tikka Wrap,Indian,180,veg,spicy
+Butter Paneer Bowl,Indian,280,veg,creamy
+Chicken Tikka Roll,Indian,220,nonveg,spicy
+Dal Makhani Rice Bowl,Indian,240,veg,comfort
+Hyderabadi Chicken Biryani,Indian,350,nonveg,spicy
+Masala Dosa,Indian,160,veg,light
+Veg Schezwan Rice,Chinese,220,veg,spicy
+Chicken Hakka Noodles,Chinese,260,nonveg,savory
+Kung Pao Chicken,Chinese,320,nonveg,spicy
+Veg Manchurian,Chinese,240,veg,crispy
+Tofu Stir Fry,Chinese,280,veg,healthy
+Spring Rolls,Chinese,180,veg,crispy
+Margherita Pizza,Italian,350,veg,cheesy
+Pepperoni Pizza,Italian,450,nonveg,cheesy
+Pesto Pasta,Italian,320,veg,herby
+Chicken Alfredo Pasta,Italian,380,nonveg,creamy
+Risotto Funghi,Italian,420,veg,comfort
+Garlic Bread Supreme,Italian,180,veg,cheesy
+Cheeseburger,American,300,nonveg,protein
+Chicken Burger,American,250,nonveg,protein
+Buffalo Wings,American,350,nonveg,spicy
+Mac and Cheese,American,280,veg,cheesy
+BBQ Chicken Sandwich,American,330,nonveg,smoky
+Caesar Salad,American,200,veg,healthy
+Chicken Teriyaki Bowl,Japanese,380,nonveg,savory
+Salmon Sushi Roll,Japanese,550,nonveg,light
+Veg Sushi Roll,Japanese,420,veg,light
+Chicken Katsu Curry,Japanese,450,nonveg,comfort
+Miso Ramen,Japanese,390,veg,umami
+Tonkotsu Ramen,Japanese,520,nonveg,umami
+Kimchi Fried Rice,Korean,320,veg,spicy
+Bibimbap,Korean,380,veg,healthy
+Bulgogi Beef Bowl,Korean,520,nonveg,protein
+Korean Fried Chicken,Korean,450,nonveg,crispy
+Tteokbokki,Korean,340,veg,spicy
+Japchae Noodles,Korean,360,veg,savory
