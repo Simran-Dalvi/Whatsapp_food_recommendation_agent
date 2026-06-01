@@ -181,4 +181,7 @@ FAQ Tool
 
 instead of hardcoded logic. That architecture will transition cleanly into WhatsApp later.
 
+% the ai agent is slow right now
+
+
 ## Phase 3
