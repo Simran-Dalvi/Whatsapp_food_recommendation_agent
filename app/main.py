@@ -1,3 +1,18 @@
+# from agent.food_agent import FoodAgent, QUESTIONS, REQUIRED_FEILDS
+# from agent.memory import ConversationMemory
+
+# agent = FoodAgent()
+# memory = ConversationMemory()
+
+# print("Food Assistant Started")
+
+# def main() -> None:
+
+#     while True:
+#         user_message = 
+
+
+
 from recommendation import recommend_food
 
 preferences = {
