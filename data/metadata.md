@@ -20,7 +20,7 @@ This dataset contains menu items from multiple cuisines and is designed for use 
 | dish     | string    | Name of the menu item offered to customers                                     |
 | category | string    | Cuisine or food category to which the dish belongs                             |
 | price    | integer   | Selling price of the dish in Indian Rupees (₹)                                 |
-| type     | string    | Dietary classification of the dish                                             |
+| diet     | string    | Dietary classification of the dish                                             |
 | style    | string    | Primary flavor profile, texture, or eating experience associated with the dish |
 
 ---
@@ -90,7 +90,7 @@ Example:
 
 ---
 
-### type
+### diet
 
 Represents dietary classification.
 

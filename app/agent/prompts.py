@@ -16,7 +16,7 @@ Extract the following fields whenever they are mentioned:
 {
     "category": "",   // cuisine such as Indian, Chinese, Italian, Fast Food
     "budget": "",     // spending limit such as 200, 300, 500
-    "type": "",       // veg, nonveg, vegan, eggitarian
+    "diet": "",       // veg, nonveg, vegan, eggitarian
     "style": "",      // spicy, cheesy, healthy, protein-rich, sweet, crispy, etc.
     "dish": ""        // specific dish requested by the user
 }

@@ -1,9 +1,9 @@
 import json
-from openai_service import chat_bot
-from prompts import EXTRACTION_PROMPT
+from .openai_service import chat_bot
+from .prompts import EXTRACTION_PROMPT
 
-REQUIRED_FEILDS = [
-        "type",
+REQUIRED_FIELDS = [
+        "diet",
         "budget",
         "category"
     ]
@@ -11,7 +11,7 @@ REQUIRED_FEILDS = [
 QUESTIONS = {
     "category" : "What type of cusine would you like ?",
     "budget" : "What's your budget ?",
-    "services" : "Dine-in or takeaway?"
+    "diet" : "veg or Non-veg?"
 }
 
 class FoodAgent:
@@ -38,7 +38,7 @@ class FoodAgent:
             return {}
         
     def get_missing_field(self, prefrences):
-        for field in REQUIRED_FEILDS:
+        for field in REQUIRED_FIELDS:
             if not prefrences.get(field):
                 return field
         

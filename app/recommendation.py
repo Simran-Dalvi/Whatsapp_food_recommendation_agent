@@ -1,23 +1,29 @@
 import pandas as pd
-from typing import Dict
+from typing import Any
 from pathlib import Path
 
-MENU = Path("../data/menu.csv")
+BASE_DIR = Path(__file__).resolve().parent.parent
+MENU_PATH = BASE_DIR / "data" / "menu.csv"
+MENU_DF = pd.read_csv(MENU_PATH)
 
 # def recommend_food(prefrenceces: Dict):
-def recommend_food(preference: Dict) -> pd.DataFrame:
+def recommend_food(preference: dict[str, Any]) -> list[str]:
 
     """
-    Takes the prefrence as a dictionary.
-    comapres it with our csv and 
-    Recommends food based on user prefrences.
+    Filter menu items based on user preferences.
+
+    Args:
+        preferences: Dictionary containing user preferences such as category, type, budget, and style.
+
+    Returns:
+        List of matching dish names
     """
 
-    df = pd.read_csv(MENU)
+    df = MENU_DF.copy()
     
     # Filter based on veg/ non-veg
-    if preference.get("type"):
-        df = df[df['type'].str.lower() == preference['type'].lower()]
+    if preference.get("diet"):
+        df = df[df['diet'].str.lower() == preference['diet'].lower()]
     
     # Filter based on category
     if preference.get("category"):
@@ -25,7 +31,7 @@ def recommend_food(preference: Dict) -> pd.DataFrame:
 
     # Filter by budget
     if preference.get("budget"):
-        df = df[df["price"] <= preference['budget']]
+        df = df[df["price"] <= int(preference['budget'])]
 
     # Filter by style
     if preference.get("style"):
@@ -34,14 +40,14 @@ def recommend_food(preference: Dict) -> pd.DataFrame:
             == preference["style"].lower()
         ]
 
-    # return df["dish"].tolist()
-    return df.to_dict(orient = "records")
+    return df["dish"].tolist()
+    # return df.to_dict(orient = "records")
 
 
 
 def main()-> None:
     preferences = {
-    'type' : 'veg',
+    'diet' : 'veg',
     'category' : 'Indian',
     'budget' : 400,
     # 'style' : 'umami'

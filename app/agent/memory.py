@@ -3,11 +3,11 @@ class ConversationMemory:
     def __init__(self):
 
         self.prefrences = {
-            "category": "",
-            "budget": "",
-            "type": "",
-            "style": "",
-            "dish": ""
+            "category": None,
+            "budget": None,
+            "diet": None,
+            "style": None,
+            "dish": None
         }
 
     def update(self, extracted):
