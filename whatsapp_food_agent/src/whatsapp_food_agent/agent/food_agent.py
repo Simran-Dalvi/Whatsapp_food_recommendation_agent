@@ -1,6 +1,6 @@
 import json
-from .openai_service import chat_bot
-from .prompts import EXTRACTION_PROMPT
+from whatsapp_food_agent.services.openai_service import chat_bot
+from whatsapp_food_agent.agent.prompts import EXTRACTION_PROMPT
 
 REQUIRED_FIELDS = [
         "diet",

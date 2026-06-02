@@ -1,3 +1,11 @@
+pip install uv
+
+uv init whatsapp_food_agent
+
+uv add openaiservice pandas python-dotenv
+
+$ uv run python -m whatsapp_food_agent.main
+
 # Whatsapp_food_recommendation_agent
 
 This is food recomendation chat bot.
@@ -185,3 +193,43 @@ instead of hardcoded logic. That architecture will transition cleanly into Whats
 
 
 ## Phase 3
+Phase 3 — Add Persistent Memory
+
+Right now memory disappears when the program stops.
+
+Add SQLite.
+
+Store:
+
+phone_number
+food_type
+budget
+style
+conversation_state
+
+Adding SQLite now is a natural next step because your chatbot currently loses all user preferences when the program restarts.
+
+After this phase, your bot will remember:
+
+Phone Number	Food Type	Budget	Style	State
++919999999999	veg	300	spicy	recommendation_complete
+
+Now 
+
+```
+User
+ ↓
+ConversationManager
+ ↓
+SQLite Database
+```
+
+```
+project/
+│
+├── app/
+├── data/
+├── database/
+│   └── database.py
+└── menu.csv
+```
